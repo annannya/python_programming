@@ -1,0 +1,6 @@
+a = input("enter ur string ")
+x= a.split()
+print(x)
+print(x[0])
+print(x[-1])
+print(len(x[-1]))
