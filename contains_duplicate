@@ -1,3 +1,5 @@
+#Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+solution:- converting a list into a set because set do no allow duplicate elements.
 a =[]
 n = int(input("enter the no. of elements of the list: "))
 for i in range(0,n):
