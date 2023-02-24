@@ -5,3 +5,6 @@ def fibo(m):
   else:
      return fibo(m-1)+fibo(m-2)
 print(fibo(12))
+
+#this code is highly inefficient bcoz with the increment on m the time to calculate this will also increase 
+#tym complexity of this code is 2^n
