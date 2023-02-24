@@ -1,0 +1,16 @@
+#checking weather the given string is palindrome or not
+#to check we need two conditions 
+# 1:- len(s) shoulod be <= 1
+# 2:- 1st and last string of a palindrome are always equal
+# solving in recurtion funtion
+def palin(text):
+  if text <= 1:
+     print('is palindrome')
+  else:
+     if text[0] == text[-1]:
+     palin(text[1:-1])
+  else:
+     print('is not palindrome')
+palin(madam)
+palin(python)
+     
