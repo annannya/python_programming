@@ -1,0 +1,24 @@
+#create a higher order function which will give three outputs 
+# 1- it will return the sum of all even numbers
+# 2- it will return the sum of all the odd numbers
+# 3- it will return sum of all the numbers which are devisible by 3
+
+# 1st we'll create a fx which will accept fx a and a list 
+# then we'll create 3 lambda functions with all the 3 conditions 
+
+
+def return_sum(func,L):
+   result = 0
+   for i in L:
+     if func(i):
+       result = result + i
+   return result
+
+
+x=lambda x: x%2==0
+y=lambda x: x%2!==0
+z=lambda x: x%3==0
+
+print(return_sum(x,L))
+print(return_sum(y,L))
+print(return_sum(z,L))
