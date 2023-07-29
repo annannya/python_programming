@@ -1,0 +1,15 @@
+def sum_arr(ar):
+    ans = sum(ar)
+    return ans
+
+
+def main():
+    n = int(input())
+    ar = []
+    for i in range (0,n):
+        l = int(input())
+        ar.append(l)
+        print(sum_arr(ar))
+
+if __name__ == "__main__":
+    main()
