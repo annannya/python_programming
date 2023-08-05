@@ -1,0 +1,85 @@
+#example of global variable
+x = "awsome" #declaring a variable as global variable of str type
+
+def myfun():  # defining a fx
+    print("Python is ",x)
+myfun() #fx call
+
+  # o/p Python is awsome
+
+# declaring local and global variable in same fx
+x ="awsome"
+
+def myfun():
+    x = "fantastic" # local variable declared inside the fx
+    print("python is "+ x) # this will use local variable for o/p
+myfun()
+print("python is "+ x) #this will use global variable for o/p
+
+  #o/p python is fantstic
+  #o/p python is awsome
+
+# using a global variavle inside a fx by using global keyword
+def myfun():
+    global x #declaring a global variable inside a fx by using global keyword
+    x = "awsome" #assigning value to the variable
+myfun()
+print("python is "+ x)
+
+  #o/p python is awsome
+
+
+#we can change the value of global variable inside a function by using global keyword
+
+x ="awsome"
+def myfun():
+    global  x
+    x = "fantastic"
+myfun()
+print("python is "+ x)
+   #o/p python is fantastic
+
+
+# operators in Python
+# Arithmetic Operator
+
+x = 5
+y =3
+print(x+y) #o/p 8
+print(x-y) #o/p 2
+print(x*y) #o/p 15
+print(x/y) #o/p 1.6666....67
+print(x%y) #o/p reminder i.e 2
+print(x**y) #o/p 5*5*5=125
+print(x//y) #o/p 1 the floor division // symbols the result down to the nearest whole number
+
+
+
+# Assignment Operator
+
+x = 5
+print(x) #o/p 5
+x+=3
+print(x) #o/p 8
+x-= 3
+print(x) #o/p 2
+x*=3
+print(x) #o/p 15
+x/=3
+print(x) #o/p 1.666...67
+x%=3
+print(x) #o/p 2
+x//=3
+print(x) #o/p 1
+x&=3
+print(x) #o/p 1
+x|=3
+print(x) #o/p 7
+x^=3
+print(x) #o/p 6
+
+x>>=3
+print(x) #o/p 0
+x<<=3
+print(x) #o/p 40
+
