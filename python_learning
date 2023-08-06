@@ -83,3 +83,168 @@ print(x) #o/p 0
 x<<=3
 print(x) #o/p 40
 
+
+# Comparision Operator
+
+x= 5
+y=5
+
+print(x==y) #o/p true
+print(x!=y) #o/p false
+print(x>y) #o/p false
+print(x<y) #o/p false
+print(x>=y) #o/p true
+print(x<=y) #o/p true
+
+
+# Logical Operator
+# AND OPERATOR:- it returns TRUE only if both the operands are TRUE
+
+x=2
+y=3
+z=-4
+
+if x>0 and y>0:
+    print("all are greater then 0 ")
+if x>0 and y>0 and z>0:
+    print("all are greater then 0")
+
+else:
+    print("atleast one is smaller then 0")
+
+# all are greater then 0
+# atleast one is smaller then 0
+
+
+ #another example
+x=2
+y=3
+z=0
+
+if x and y and z: # x and y are greater then 0 so its boolean value is true but z is 0 so it will be false
+    print("all values have boolean value as true")
+
+else:
+    print("atleast one boolean value is false ")
+
+# o/p atleast one boolean value is false 
+# if 1st value evaluated to be FALSE then the future expression wont be evaluated
+
+
+# OR OPERATOR
+x=2
+y=-3
+z=0
+
+if x>0 or y>0:
+    print("either one value is greater then 0")
+else:
+    print("no one is greater then 0")
+if  y>0 or z>0:
+    print("either one vale is greater then 0")
+else:
+    print("no one is greater then 0")
+#o/p either one value is greater then 0
+#o/p no one value is greater then 0
+
+
+# Another example
+x=2
+y=-3
+z=0
+
+if x or y or z:
+    print("atleast one value has a boolean value to TRUE")
+else:
+    print("none of the values are evaluated to true")
+#o/p atleast one vale has a boolean value to TRUE
+ 
+# If one value evaluates to TRUE then the future expression will not be evaluated
+
+
+# OR OPERATOR
+
+x=2
+if not x:  #this if checks for x=0 but x is not equal to 0 this statement will not execute
+    print("boolean value of x is TRUE")
+if not (x%3==0 or x%2==0):
+    print("2 is not divisible by 3 and 2")
+else:
+    print("2 is divisible by either 3 or 2")
+    
+    #o/p 2 is divisible by either 3 or 2
+
+
+# IDENTITY OPERATOR
+#IS OPERATOR
+
+x=5
+y=5
+if x is y:
+    print("both x and y refer to same object")
+print(id(x))
+print(id(y))
+#o/p both x and y refer to same object
+# 182336
+# 182336
+#both x and y shares same memory location
+
+# NOT IS OPERATOR
+x=[1,2,3]
+y=[1,2,3]
+z=x
+print(id(x))
+print(id(y))
+print(id(z))
+print(x is not y)
+print(x is not z)
+print(x!=y)
+
+#o/p 2345
+#o/p 5678
+#o/p 2345
+#o/p true
+#o/p false
+#o/p true
+
+
+
+# MEMBERSHIP OPERATOR
+# IN OPERATOR
+x=[1,2,3,4]
+y=[1,5,6,4]
+
+for i in x:
+    if i in y:
+        print("overlapping")
+    else:
+        print("not overlapping")
+        
+#o/p overlapping
+#o/p not overlapping
+#o/p not overlapping
+#o/p overlapping
+
+
+# BITWISE OPERATOR
+# BITWISE AND &
+a=10
+b=2
+print(a&b) # 10-> 01010 & 2->00010 = 00010 = 2
+
+# BITWISE OR |
+a=10
+b=2
+print(a|b) # 10-> 01010 | 2->00010 = 01010=10
+
+# BITWISE NOT ~
+a=10
+b=2
+print(~b) #o/p -3
+# since bitwise negation inverts the sign bits, we now have a negative number that we have to convert into 2s complement
+
+# BITWISE XOR ^
+a=10
+b=2
+print(a^b) # 10-> 0001010 ^ 0000010 = 0001000 = 8
+
