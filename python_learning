@@ -278,3 +278,24 @@ print("string")
 str="ananya"
 for i in str:
     print(i,end="") #[end=""] jb hum ko ek hi line m print krvana hota h tb hum ye use krte h
+
+#o/p list
+1
+2
+3
+ananya
+tuple
+5
+6
+7
+bhavi
+dictionary
+xyz 123
+abc 456
+set
+unhashable type: 'list'
+string
+ananya
+
+
+
