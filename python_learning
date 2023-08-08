@@ -248,4 +248,33 @@ a=10
 b=2
 print(a^b) # 10-> 0001010 ^ 0000010 = 0001000 = 8
 
+# FOR LOOP ITERATION WITH LIST TUPLE DICTIONARY SET AND STRING using TRY AND EXCEPT 
+print("list")
+l=[1,2,3,'ananya']
+for i in range(len(l)):
+    print(l[i])
 
+print("tuple")
+t=(5,6,7,'bhavi')
+for i in range(len(t)):
+    print(t[i])
+
+print("dictionary")
+d=dict()
+d["xyz"]=123
+d["abc"]=456
+for i in d:
+    print(i,d[i])
+
+print("set")
+try:
+    s={"aditya",(1,2,3,4),34,[5,6,7]}
+    for i in s:
+        print(i)
+except Exception as e:
+    print(e)
+
+print("string")
+str="ananya"
+for i in str:
+    print(i,end="") #[end=""] jb hum ko ek hi line m print krvana hota h tb hum ye use krte h
