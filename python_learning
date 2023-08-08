@@ -341,3 +341,34 @@ print(a+b)
 ananyasahu
 [1, 2, 3, 4, 5, 6]
 
+
+#ANY/ALL
+
+#use of ANY function in List[]
+l1=[]
+l2=[]
+
+for i in range(1,11):
+    l1.append(4*i)
+for i in range(0,10):
+    l2.append(l1[i]%2==0)
+print("see weather atleast one number is divisible by 2 in list1")
+print(any(l2))
+
+#o/psee weather atleast one number is divisible by 2 in list1
+True
+
+
+#use of ALL function in List[]
+l1=[]
+l2=[]
+
+for i in range(1,21):
+    l1.append(4*i)
+for i in range(0,20):
+    l2.append(l1[i]%2==1)
+print("see weather atleast all numbers is divisible by 2 in list1")
+print(any(l2))
+
+#o/psee weather atleast all numbers is divisible by 2 in list1
+False
