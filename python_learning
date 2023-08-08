@@ -298,4 +298,35 @@ string
 ananya
 
 
+#TERNARY OPERATOR
+
+#TERNARY OPERATOR WITH TUPLE DICTIONARY LAMBDA
+
+#using tuple for selecting an item
+#(if_test_false if_test_true) [test]
+#if [a<b] is true it will return 1,so element with 1 index will get print
+#if [a<b] is false it will return 0, so element with 0 index will get print
+a,b=10,20
+print((b,a) [a<b])
+#true-1 o/p 10
+
+
+#using dictionary for selecting an item
+#this is basically dictionary lookup expression it is a way to look up a value in a dictionary
+#dictionary {True:a,False:b} has two values keys True and False and values a and b respectively
+#if a<b is True then vale of True will be printed
+#else if a<b is false then the valse of False will be printed
+print({True:a,False:b} [a>b])
+
+
+print((lambda :a, lambda :b)[a>b]())
+#lambda is more efficient then above two
+#bcoz in lambda we are assure that only one expression is evaluated unlike in tuple and dictionary
+
+
+#o/p10
+20
+10
+
+
 
