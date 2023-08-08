@@ -328,5 +328,16 @@ print((lambda :a, lambda :b)[a>b]())
 20
 10
 
+#OPERATOR OVERLOADING
 
+#+ operator
+print(1+2)
+print("ananya" +"sahu")
+a=[1,2,3]
+b=[4,5,6]
+print(a+b)
+
+#o/p3
+ananyasahu
+[1, 2, 3, 4, 5, 6]
 
