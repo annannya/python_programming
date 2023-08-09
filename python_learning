@@ -433,3 +433,9 @@ print(c.lstrip()) #o/p'ananya  '
 
 #sirf right side k blankspace ko hatana h to "RSTRIP"
 print(c.rstrip())#o/p'  ananya'
+
+
+a='my name is ananya'
+print(a.upper()) #o/p MY NAME IS ANANYA
+print(a.lower()) #o/p my name is ananya
+print(a.capitalize()) #o/p My name is ananya
