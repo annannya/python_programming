@@ -461,3 +461,24 @@ c="ananya1"
 print(a.isalpha(),a.isnumeric(),a.isalnum()) #True False True
 print(b.isalpha(),b.isnumeric(),b.isalpha()) #False True False
 print(c.isalpha(),c.isnumeric(),c.isalnum()) #False False True
+
+
+# count()- ye function count kr k btayega ki kitne characters total h us string m jo bhi characters hum isse count krne bolenge
+a="ananyasahu"
+print(a.count("a")) #o/p 4
+
+# find()- jo bhi character isse dhundne bolenge vo character ka 1st occurance ka index btayega
+# rfind()- same kam krega pr right side se krega
+print(a.find("n")) #o/p 1
+
+# partition()- ye string ko TUPLE m convert kr deta h ,
+#jo string hum denge jaha se usse partition krna h vo middle m rehega tuple k
+#or ussk phele k sare strings ek element bnenge or 1st element honge and same goes for usk bad k strings
+b="my name is ananya"
+print(b.partition("is")) #o/p ('my name ', 'is', ' ananya')
+
+# f-string()
+num=1
+l="ananya"
+s=f"my name is {l} and my age is {num*23} years"
+print(s) #o/p my name is ananya and my age is 23 years
