@@ -107,3 +107,11 @@ l="ananya"
 s=f"my name is {l} and my age is {num*23} years"
 print(s) #o/p my name is ananya and my age is 23 years
 
+# How to reverse a string
+a="My name is ananya"
+print(a[::-1])
+
+# we can reverse a string by using JOIN and REVERSED
+s=''.join(reversed(a))
+print(s)
+
