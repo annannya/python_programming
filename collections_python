@@ -115,3 +115,13 @@ print(a[::-1])
 s=''.join(reversed(a))
 print(s)
 
+
+
+# LIST in Python
+
+# Declaring a list
+l=[]
+a=[1,2,"ananya",True]
+print(l) # o/p []
+print(a) # o/p [1, 2, 'ananya', True]
+
