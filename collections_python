@@ -127,6 +127,15 @@ print(a) # o/p [1, 2, 'ananya', True]
 
 # LIST
 
+
+# taking i/p from user using loop
+n=int(input("enter no. of element"))
+l=[]
+for i in range(0,n):
+    ele = int(input())
+    l.append(ele)
+print(l)
+
 #taking i/p from user using map()
 
 n=int(input("enter the no of elements"))
