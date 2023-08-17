@@ -210,3 +210,24 @@ print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3]]
 # EXTEND :- agr ek list m dusre list k ele ko add krna ho to hum extend use krte h
 l.extend(['xoxo','ttyl','lol'])
 print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3], 'xoxo', 'ttyl', 'lol']
+
+
+# LIST m TUPLE ko bhi extend krenge tb bhi usk sare ele list m add hojayenge
+t=('!','@','#')
+l.extend(t)
+print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3], 'xoxo', 'ttyl', 'lol', '!', '@', '#']
+
+# same goes for SET
+s={11,22,33,44,55}
+l.extend(s)
+print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3], 'xoxo', 'ttyl', 'lol', '!', '@', '#', 33, 22, 55, 11, 44]
+
+# string ko extend krne se ek ek letter add hota h
+l.extend('sahu')
+print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3], 'xoxo', 'ttyl', 'lol', '!', '@', '#', 33, 22, 55, 11, 44]
+
+# += bhi use kr skte h
+l1=[1,2,3,4]
+l2=['anna','akka','chinna']
+l1 += l2
+print(l1) #o/p [1, 2, 3, 4, 'anna', 'akka', 'chinna']
