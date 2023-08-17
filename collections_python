@@ -125,3 +125,10 @@ a=[1,2,"ananya",True]
 print(l) # o/p []
 print(a) # o/p [1, 2, 'ananya', True]
 
+# LIST
+
+#taking i/p from user using map()
+
+n=int(input("enter the no of elements"))
+l=list(map(int,input().strip().split()))[:n]
+print(l)
