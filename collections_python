@@ -141,3 +141,38 @@ print(l)
 n=int(input("enter the no of elements"))
 l=list(map(int,input().strip().split()))[:n]
 print(l)
+
+
+# Methods used in LIST
+
+# append
+l=[1,2,3,4]
+l.append(55)
+print(l) #o/p [1, 2, 3, 4, 55]
+
+# insert
+l.insert(2,"ananya")
+print(l) # o/p [1, 2, 'ananya', 3, 4, 55]
+
+# extend:- do list ko jod deta h
+l2=[6,7,8,9,1,1,1,1]
+l.extend(l2)
+print(l) #o/p [1, 2, 'ananya', 3, 4, 55, 6, 7, 8, 9,1,1,1,1]
+
+# important FUNCTIONS in LIST
+
+# sum() :- ek list k sare elements ka sum return krta h
+print(sum(l2)) #o/p 30
+
+# count() :- ye ek perticlar element kitne bar occur hua h vo count kr k deta h
+print(l2.count(1)) #o/p 4
+
+# min() :- list k minimum no. ko return krta h
+print(min(l2)) #o/p 1
+
+# max() :- list ka mamimum no ko return krega
+print(max(l2)) #o/p 9
+
+# DELETION in LIST
+
+# pop() :- 
