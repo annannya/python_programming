@@ -187,3 +187,26 @@ print(l) #o/p [1, 2, 3, 4, 5, 6]
 # REMOVE:- perticular ele pta h pr uski position na pta ho to hum ele ko remove krte h
 l.remove(3)
 print(l) #o/p [1, 2, 5, 6]
+
+
+# APPEND
+
+#  append  ele ko last m add kr deta h
+l=['ananya','nikhil','adi']
+l.append('dutta')
+print(l) #o/p ['ananya', 'nikhil', 'adi', 'dutta']
+
+
+# agr specific position m add krna ho to hum INSERT use krte h
+l.insert(1,'bhavi')
+print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta']
+
+
+# agr ek list m dusra list append kro to vo 2nd list pura ka pura ek ele ki taraha append hojayega
+l.append([1,2,3])
+print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3]]
+
+
+# EXTEND :- agr ek list m dusre list k ele ko add krna ho to hum extend use krte h
+l.extend(['xoxo','ttyl','lol'])
+print(l) #o/p ['ananya', 'bhavi', 'nikhil', 'adi', 'dutta', [1, 2, 3], 'xoxo', 'ttyl', 'lol']
