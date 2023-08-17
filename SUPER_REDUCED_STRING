@@ -1,0 +1,19 @@
+Reduce a string of lowercase characters in range ascii[‘a’..’z’]by doing a series of operations. In each operation, select a pair of adjacent letters that match, and delete them.
+
+Delete as many characters as possible using this method and return the resulting string. If the final string is empty, return Empty String
+
+n=input()  # strings are immutable
+l=list(n)  # is liye hum string ko hum list convert kr dere h
+i=0
+while i<len(l)-1: # humne lenth - 1 is liye liya qki hum niche i+1 tk check kre h or i=5 hota to i+1 6 hojayega to out off scope chla jayega
+    if l[i]==l[i+1]:
+        del l[i] #python m code line by line interpretate hota h to jb ye line chla to agr list 10 ele ka hoga to vo del hone k bad 9 ka hogaya
+        del l[i] # or jb ye line chla to auto matically vo i+1 vala hi ele ko delete kiya
+        i=0
+        if l==[]: # empty hoga to aaise hi indicate krna
+            print("empty")
+            break
+    else:
+        i=i+1
+j=''.join(l)
+print(j)
