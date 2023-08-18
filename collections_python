@@ -170,6 +170,10 @@ print(l2.count(1)) #o/p 4
 # min() :- list k minimum no. ko return krta h
 print(min(l2)) #o/p 1
 
+# min() :- min agr strings k sath use kro or key paremeter bhjo to vo return krega string jo sb se chota h
+l=min('ananya','nikhil','samriddhi','janvika',key=len)
+print(l)
+
 # max() :- list ka mamimum no ko return krega
 print(max(l2)) #o/p 9
 
@@ -231,3 +235,5 @@ l1=[1,2,3,4]
 l2=['anna','akka','chinna']
 l1 += l2
 print(l1) #o/p [1, 2, 3, 4, 'anna', 'akka', 'chinna']
+
+
