@@ -1,0 +1,20 @@
+# There is a sequence of words in CamelCase as a string of letters, , having the following properties:
+#
+# It is a concatenation of one or more words consisting of English letters.
+# All letters in the first word are lowercase.
+# For each of the subsequent words, the first letter is uppercase and rest of the letters are lowercase.
+# Given , determine the number of words in .
+#
+# Example
+# s = oneTwoThree
+# There are  words in the string: 'one', 'Two', 'Three'.
+
+
+s=input()
+count=1
+
+for i in s:
+    if ord(i)>=65 and ord(i)<=90: # asii code ka range h 65 se 90 for upper case
+        count=count+1
+
+print(count)
