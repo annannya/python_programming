@@ -1,0 +1,6 @@
+#Pythonist 2 → pYTHONIST 2 
+s=input()
+print(s.swapcase())
+#i/p-AnAnyA
+#o/p-aNaNYa
+# swapcase converts uppercase to lowercase and vise versa
